@@ -1,45 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:elevation="4dp"
-    android:padding="12dp">
-
-
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:background="#FFFFFF"
+    android:foreground="?android:attr/selectableItemBackground">
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/txtWaktu"
-            android:textStyle="bold"
-            android:textSize="16sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Waktu: 2025-06-25 10:15"
+            android:textSize="16sp"
+            android:textColor="#1E88E5"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtWilayah"
-            android:textSize="14sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Wilayah: Sukabumi, Jawa Barat"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginTop="4dp" />
 
         <TextView
             android:id="@+id/txtMagnitude"
-            android:textSize="14sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Magnitude: 5.2 SR"
+            android:textSize="14sp"
+            android:textColor="#F44336"
+            android:layout_marginTop="2dp" />
+
         <TextView
             android:id="@+id/txtJarak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jarak: "
-            android:textSize="14sp"
+            android:text="Jarak: 120 km dari lokasi Anda"
+            android:textSize="13sp"
             android:textColor="#666666"
-            android:layout_marginTop="4dp" />
+            android:layout_marginTop="6dp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
